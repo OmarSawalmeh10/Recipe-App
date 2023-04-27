@@ -3,14 +3,19 @@
         <app-recipe-list></app-recipe-list>
     </div>
     <div class="col-md-7">
+
+        <!-- dd
         <app-recipe-detail
         *ngIf="selectedRecipe; else infoText"
         [recipe]="selectedRecipe"
         >
         </app-recipe-detail>
-        <!-- Dummy Text -->
+        Dummy Text
         <ng-template #infoText>
             <p>Please select a Recipe!</p>
         </ng-template>
+        dd -->
+
+        <router-outlet></router-outlet>
     </div>
 </div>
